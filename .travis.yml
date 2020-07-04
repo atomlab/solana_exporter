@@ -1,3 +1,9 @@
 language: go
 go:
   - 1.14
+deploy:
+  provider: s3
+  access_key_id: "$S3_ACCESS_KEY"
+  secret_access_key: "$S3_SECRET_KEY"
+  bucket: "S3 Bucket"
+  glob: "github.com/certusone/solana_exporter/cmd/solana_exporter"
