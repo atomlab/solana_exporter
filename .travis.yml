@@ -9,4 +9,4 @@ deploy:
   region: "us-west-2"
   bucket: "travis.hub"
   upload-dir: solana_exporter
-  local_dir: bin
+  local_dir: ./bin
