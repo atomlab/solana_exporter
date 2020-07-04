@@ -9,4 +9,4 @@ deploy:
   region: "us-west-2"
   bucket: "travis.hub"
   upload-dir: solana_exporter
-  local_dir: ./atomlab/solana_exporter/bin
+  local_dir: cmd
