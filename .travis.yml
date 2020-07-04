@@ -5,5 +5,5 @@ deploy:
   provider: s3
   access_key_id: "$S3_ACCESS_KEY"
   secret_access_key: "$S3_SECRET_KEY"
-  bucket: "S3 Bucket"
+  bucket: "travis.hub"
   glob: "github.com/certusone/solana_exporter/cmd/solana_exporter"
