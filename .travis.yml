@@ -8,4 +8,5 @@ deploy:
   secret_access_key: "$S3_SECRET_KEY"
   region: "us-west-2"
   bucket: "travis.hub"
-  upload-dir: bin
+  upload-dir: solana_exporter
+  local_dir: bin
