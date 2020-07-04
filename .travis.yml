@@ -14,7 +14,7 @@ services:
 - docker
   
 before_install:
-- docker run -t --rm -w /opt -v /tmp:/opt golang:1.14 go build -o /opt/bin/solana_exporter github.com/certusone/solana_exporter/cmd/solana_exporte
+- docker run -t --rm -w /opt -v ${PWD}:/opt golang:1.14 go build -o /opt/bin/solana_exporter github.com/certusone/solana_exporter/cmd/solana_exporter
 
 deploy:
   provider: s3
