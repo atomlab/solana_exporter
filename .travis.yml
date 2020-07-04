@@ -7,4 +7,3 @@ deploy:
   secret_access_key: "$S3_SECRET_KEY"
   region: "us-west-2"
   bucket: "travis.hub"
-  glob: "github.com/certusone/solana_exporter/cmd/solana_exporter"
