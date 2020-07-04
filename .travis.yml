@@ -1,9 +1,17 @@
-language: go
-go:
-  - 1.14
-deploy:
-  provider: s3
-  access_key_id: "$S3_ACCESS_KEY"
-  secret_access_key: "$S3_SECRET_KEY"
-  region: "us-west-2"
-  bucket: "travis.hub"
+#language: go
+#go:
+#  - 1.14
+#deploy:
+#  provider: s3
+#  access_key_id: "$S3_ACCESS_KEY"
+#  secret_access_key: "$S3_SECRET_KEY"
+#  region: "us-west-2"
+#  bucket: "travis.hub"
+
+language: ruby
+
+services:
+- docker
+  
+before_install:
+- ls -la
